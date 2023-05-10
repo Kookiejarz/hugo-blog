@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kenneth Blog</title>
+    <link>http://blog.btlcraft.top/tags/</link>
+    <description>Recent content in Tags on Kenneth Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.btlcraft.top/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rewards</title>
+      <link>http://blog.btlcraft.top/tags/rewards/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.btlcraft.top/tags/rewards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Site</title>
+      <link>http://blog.btlcraft.top/tags/site/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.btlcraft.top/tags/site/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
