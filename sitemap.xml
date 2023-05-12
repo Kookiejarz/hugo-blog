@@ -2,34 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://loadfull.tk/post/2023-05-10-hi/</loc>
-    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <loc>https://loadfull.tk/2023/05/12/friday-yeah/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loadfull.tk/</loc>
-    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://loadfull.tk/tags/life/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loadfull.tk/post/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://loadfull.tk/tags/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://loadfull.tk/2023/05/10/greetings-and.../</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://loadfull.tk/post/2023-5-10-python-cert/</loc>
+    <loc>https://loadfull.tk/2023/05/10/python-level-5-certificate/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loadfull.tk/tags/rewards/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://loadfull.tk/about/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://loadfull.tk/tags/site/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://loadfull.tk/tags/</loc>
-    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://loadfull.tk/about/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://loadfull.tk/search/placeholder/</loc>
-  </url><url>
     <loc>https://loadfull.tk/categories/</loc>
-  </url><url>
-    <loc>https://loadfull.tk/search/</loc>
   </url>
 </urlset>
