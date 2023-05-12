@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="https://loadfull.tk/img/home.jpg">
-    <meta property="twitter:image" content="https://loadfull.tk/img/home.jpg" />
+    <meta property="og:image" content="https://loadfull.tk//img/home.jpg">
+    <meta property="twitter:image" content="https://loadfull.tk//img/home.jpg" />
     
 
     
@@ -104,13 +104,13 @@
                     
                     
 		    
-                        <li><a href="/about/">About</a></li>
+                        <li><a href="/target//">Target</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
                     
                         <li><a href="http://chat.btlcraft.top:9011/">Chat-GPT</a></li>
                     
                         <li><a href="http://alist.btlcraft.top:9011/">Alist</a></li>
-                    
-                        <li><a href="/top/target//">Target</a></li>
                     
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
@@ -208,8 +208,7 @@
                 post-container">
 
                 
-                <p>Hi everyone, apparently, this is a blog I have created just now. I&rsquo;ll post something on it. It could be my daily life, something that I was interested in and so on. If you want to ask me why did I bulid this blog. I will tell you that it is my hobby.
-I&rsquo;ll try to keep on daily upload, if I didn&rsquo;t write anything for so long you can just ping me. I&rsquo;ll be here for 7*24hr (most of the time).</p>
+                <p>Hi everyone, apparently, this is a blog I have created just now. I’ll post something on it. It could be my daily life, something that I was interested in and so on. If you want to ask me why did I bulid this blog. I will tell you that it is my hobby. I’ll try to keep on daily upload, if I didn’t write anything for so long you can just ping me. I’ll be here for 7*24hr (most of the time).</p>
 
 
                 
@@ -219,10 +218,15 @@ I&rsquo;ll try to keep on daily upload, if I didn&rsquo;t write anything for so 
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/2023-5-10-python-cert/" data-toggle="tooltip" data-placement="top" title="Python level-5 Certificate!">&larr;
+                        <a href="/post/2023-05-10-python-cert/" data-toggle="tooltip" data-placement="top" title="Python level-5 Certificate!">&larr;
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/2023-05-12-friday/" data-toggle="tooltip" data-placement="top" title="Friday! Yeah!">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
                 
@@ -234,6 +238,20 @@ I&rsquo;ll try to keep on daily upload, if I didn&rsquo;t write anything for so 
             </div>
 
             
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
             
 
             
@@ -248,6 +266,12 @@ I&rsquo;ll try to keep on daily upload, if I didn&rsquo;t write anything for so 
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/life" title="life">
+                            life
+                        </a>
                         
                         
                         
@@ -390,6 +414,63 @@ I&rsquo;ll try to keep on daily upload, if I didn&rsquo;t write anything for so 
 
 
 
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
