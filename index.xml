@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kenneth Blog</title>
+    <link>https://loadfull.tk/</link>
+    <description>Recent content on Kenneth Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://loadfull.tk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Friday! Yeah!</title>
+      <link>https://loadfull.tk/post/2023-05-12-friday/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://loadfull.tk/post/2023-05-12-friday/</guid>
+      <description>Yooo! It&amp;rsquo;s Friday. The happiest day in the week must be Friday, because you&amp;rsquo;ll have two days for rest and do things whenever you like! :D But I had to take lessons during weekend, not cool, still I can working on with my blog and post some new things up to it. I just misdelated all the files that were used for deploy the blog(That&amp;rsquo;s why i didn&amp;rsquo;t post anything</description>
+    </item>
+    
+    <item>
+      <title>Greetings and...</title>
+      <link>https://loadfull.tk/post/2023-05-10-hi/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://loadfull.tk/post/2023-05-10-hi/</guid>
+      <description>Hi everyone, apparently, this is a blog I have created just now. I’ll post something on it. It could be my daily life, something that I was interested in and so on. If you want to ask me why did I bulid this blog. I will tell you that it is my hobby. I’ll try to keep on daily upload, if I didn’t write anything for so long you can just ping me.</description>
+    </item>
+    
+    <item>
+      <title>Python level-5 Certificate!</title>
+      <link>https://loadfull.tk/post/2023-05-10-python-cert/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://loadfull.tk/post/2023-05-10-python-cert/</guid>
+      <description>Ohhhhhh! Just received my python level five certificate from Chinese Institute Of Electronics. I cannot express how excited I am to receive this unique certificate. You see, the Python levels certificate from Chinese Institute Of Electronics is divided into six levels and I already made five of them! That means I’ll be “graduate” from python after I get</description>
+    </item>
+    
+    <item>
+      <title>Short intro</title>
+      <link>https://loadfull.tk/about/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://loadfull.tk/about/</guid>
+      <description>Hi this is Kenneth, maybe you’re thinking why did I build this site. It’s just about sharing my thoughts and my opinions about something. Or just keeping some crazy ideas that were unreachable for now.(Or you can just called it a diary) Yes I want some place can store all my colorful emotions and show my personalities. If you are reading this</description>
+    </item>
+    
+  </channel>
+</rss>
