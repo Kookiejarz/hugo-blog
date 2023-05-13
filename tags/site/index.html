@@ -185,6 +185,33 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
+    <a href="https://loadfull.tk/post/2023-05-13-saty/">
+        <h2 class="post-title">
+            来画饼！
+        </h2>
+	
+        <h3 class="post-subtitle">
+            这个怎么弄？
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            这应该是我第一篇中文的博客吧， 光全是英文的话没什么意思，偶尔换换语言也挺好的。 这一篇主要是想想这个网站该怎么搞，目前为止应该是有很多功能缺失
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Kenneth on Saturday, May 13, 2023
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="https://loadfull.tk/post/2023-05-10-hi/">
         <h2 class="post-title">
             Greetings and...
@@ -454,63 +481,6 @@
 
 
 
-
-<script type="text/javascript">
-    function generateCatalog(selector) {
-
-        
-        
-        
-        
-            _containerSelector = 'div.post-container'
-        
-
-        
-        var P = $(_containerSelector), a, n, t, l, i, c;
-        a = P.find('h1,h2,h3,h4,h5,h6');
-
-        
-        $(selector).html('')
-
-        
-        a.each(function () {
-            n = $(this).prop('tagName').toLowerCase();
-            i = "#" + $(this).prop('id');
-            t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
-            l = $('<li class="' + n + '_nav"></li>').append(c);
-            $(selector).append(l);
-        });
-        return true;
-    }
-
-    generateCatalog(".catalog-body");
-
-    
-    $(".catalog-toggle").click((function (e) {
-        e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
-    }))
-
-    
-
-
-    loadAsync("\/js\/jquery.nav.js", function () {
-        $('.catalog-body').onePageNav({
-            currentClass: "active",
-            changeHash: !1,
-            easing: "swing",
-            filter: "",
-            scrollSpeed: 700,
-            scrollOffset: 0,
-            scrollThreshold: .2,
-            begin: null,
-            end: null,
-            scrollChange: null,
-            padding: 80
-        });
-    });
-</script>
 
 
 
