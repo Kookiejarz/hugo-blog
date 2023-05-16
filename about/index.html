@@ -213,11 +213,6 @@
                 <hr>
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/search/" data-toggle="tooltip" data-placement="top" title="Search Results">&larr;
-                            Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
                         <a href="/target/" data-toggle="tooltip" data-placement="top" title="A list of things waiting to do...">Next
@@ -230,6 +225,19 @@
                 
 
 
+
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'bsfJ6oYpGC2qpBMoOVJ4P7EK-MdYXbMMI',
+        appKey: 'FE83opn0eQS7SJMgNt5e4iRf',
+        placeholder: 'Say something to me here...',
+        visitor: 'true'
+    })
+</script>
 
             </div>
 

@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Search Results" />
-    <meta property="og:title" content="Search Results" />
-    <meta property="twitter:title" content="Search Results" />
+    <meta name="title" content="" />
+    <meta property="og:title" content="" />
+    <meta property="twitter:title" content="" />
     
 
     
@@ -34,7 +34,7 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Search Results | Liu的博客 | Kenneth Blog</title>
+    <title>Searches | Liu的博客 | Kenneth Blog</title>
 
     <link rel="canonical" href="/search/">
 
@@ -153,37 +153,14 @@
 
 
 
-
-<style type="text/css">
-    header.intro-header {
-        background-image: url('/img/home.jpg')
-    }
-</style>
-
-<header class="intro-header" >
-
+<header class="intro-header" style="background-image: url('/img/home.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                    </div>
-                    <h1>Search Results</h1>
-                    <h2 class="subheading"></h2>
-                    <span class="meta">
-                        
-                            Posted by 
-                            
-                                    Kenneth Blog
-                             
-                            on 
-                            Monday, January 1, 0001
-                            
-                            
-                            
-                            
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Kenneth Blog </h1>
+                    
+		    <span class="subheading">观 世 变 ，展 未 来</span>
                 </div>
             </div>
         </div>
@@ -192,134 +169,241 @@
 
 
 
-
-<article>
-    <div class="container">
-        <div class="row">
-
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+        
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
 
-                
-                <p>This file exists solely to respond to /search URL with the related <code>search</code> layout template.</p>
-<p>No content shown here is rendered, all content is based in the template layouts/page/search.html</p>
-<p>Setting a very low sitemap priority will tell search engines this is not important content.</p>
-<p>This implementation uses Fusejs, jquery and mark.js</p>
-<h2 id="initial-setup">Initial setup</h2>
-<p>Search  depends on additional output content type of JSON in config.toml
-```
-[outputs]
-home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;]
-```</p>
-<h2 id="searching-additional-fileds">Searching additional fileds</h2>
-<p>To search additional fields defined in front matter, you must add it in 2 places.</p>
-<h3 id="edit-layouts_defaultindexjson">Edit layouts/_default/index.JSON</h3>
-<p>This exposes the values in /index.json
-i.e. add <code>category</code>
-```
-&hellip;
-&ldquo;contents&rdquo;:{{ .Content | plainify | jsonify }}
-{{ if .Params.tags }},
-&ldquo;tags&rdquo;:{{ .Params.tags | jsonify }}{{end}},
-&ldquo;categories&rdquo; : {{ .Params.categories | jsonify }},
-&hellip;
-```</p>
-<h3 id="edit-fusejs-options-to-search">Edit fuse.js options to Search</h3>
-<p><code>static/js/search.js</code>
-```
-keys: [
-&ldquo;title&rdquo;,
-&ldquo;contents&rdquo;,
-&ldquo;tags&rdquo;,
-&ldquo;categories&rdquo;
-]
-```</p>
+<div id="search-searchbar"></div>
+ <div class="post-list" id="search-hits">
+ </div>
+
+<script>
+const search = instantsearch({
+  appId: 'R82SJE1E8D',
+  indexName: 'algolia.json',
+  apiKey: '60c04cfa979c09c0527b1e64d6e032aa'
+});
+
+const hitTemplate = function(hit) {
 
 
-                
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+  let url = `${hit.url}#${hit.anchor}`;
+  const title = hit._highlightResult.title.value;
 
-                
-                <hr>
-                <ul class="pager">
-                    
-                    
-                    <li class="next">
-                        <a href="/about/" data-toggle="tooltip" data-placement="top" title="Short intro">Next
-                            Post &rarr;</a>
-                    </li>
-                    
-                </ul>
-                
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="post-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
 
-                
+  let content = "" ; 
+  if (hit._highlightResult.content){
+      content = hit._highlightResult.content.value;
+  }
+  else{
+      content = hit.summary;
+  }
 
 
-
-            </div>
-
-            
-            
-            <div class="
-                col-lg-2 col-lg-offset-0
-                visible-lg-block
-                sidebar-container
-                catalog-container">
-                <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
-                    <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
-                    </h5>
-                    <ul class="catalog-body"></ul>
-                </div>
-            </div>
-            
-
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                        
-                        
-                        <a href="/tags/life" title="life">
-                            life
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/rewards" title="rewards">
-                            rewards
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/site" title="site">
-                            site
-                        </a>
-                        
-                        
-                    </div>
-                </section>
-                
-
-                
-                
-            </div>
-        </div>
+  return `
+    <div class="post-item">
+      <span class="post-meta">${date}</span>
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
+      <div class="post-snippet">${content}</div>
     </div>
-</article>
+  `;
+}
 
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search into posts...',
+    poweredBy: true // This is required if you're on the free Community plan
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+search.start();
+</script>
+
+<style>
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+.post-breadcrumbs {
+  color: #424242;
+  display: block;
+}
+.post-breadcrumb {
+  font-size: 18px;
+  color: #424242;
+}
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+}
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
+.post-snippet img {
+  display: none;
+}
+</style>
+
+        
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/profile.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>A student who is creative and curious about new things. Not very good in mathematics.</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:mail@loadfull.tk">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/img/wechat-qr.jpg">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/Kookiejarz">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+                    <a href="/tags/life" title="life">
+                        life
+                    </a>
+               
+            
+               
+                    <a href="/tags/rewards" title="rewards">
+                        rewards
+                    </a>
+               
+            
+               
+                    <a href="/tags/site" title="site">
+                        site
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+</div>
+
+	</div>
+</div>
 
 
 
@@ -378,7 +462,7 @@ keys: [
             
            
                    <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="Kenneth Blog" >
+                       <a href='/search/index.xml' rel="alternate" type="application/rss+xml" title="Kenneth Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

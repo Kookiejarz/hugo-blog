@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="https://loadfull.tk/img/home.jpg">
-    <meta property="twitter:image" content="https://loadfull.tk/img/home.jpg" />
+    <meta property="og:image" content="https://loadfull.tk//img/home.jpg">
+    <meta property="twitter:image" content="https://loadfull.tk//img/home.jpg" />
     
 
     
@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="" />
-    <meta property="twitter:description" content="" />
+    <meta name="description" content="日常，想法和更多">
+    <meta property="og:description" content="日常，想法和更多" />
+    <meta property="twitter:description" content="日常，想法和更多" />
     
 
     
@@ -34,7 +34,7 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title></title>
+    <title>Liu的博客 | Kenneth Blog</title>
 
     <link rel="canonical" href="/search/placeholder/">
 
@@ -104,13 +104,13 @@
                     
                     
 		    
-                        <li><a href="/about/">About</a></li>
+                        <li><a href="/target//">Target</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
                     
                         <li><a href="http://chat.btlcraft.top:9011/">Chat-GPT</a></li>
                     
                         <li><a href="http://alist.btlcraft.top:9011/">Alist</a></li>
-                    
-                        <li><a href="/top/target//">Target</a></li>
                     
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
@@ -214,9 +214,36 @@
 
 
 
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'bsfJ6oYpGC2qpBMoOVJ4P7EK-MdYXbMMI',
+        appKey: 'FE83opn0eQS7SJMgNt5e4iRf',
+        placeholder: 'Say something to me here...',
+        visitor: 'true'
+    })
+</script>
+
             </div>
 
             
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
             
 
             
@@ -231,6 +258,12 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/life" title="life">
+                            life
+                        </a>
                         
                         
                         
@@ -313,15 +346,19 @@
             
             
            
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Kenneth Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
              </ul>
 		<p class="copyright text-muted">
                     Copyright &copy; Kenneth Blog 2023
                     <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -373,6 +410,63 @@
 
 
 
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
