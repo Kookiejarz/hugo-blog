@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Searches on Kenneth Blog</title>
-    <link>https://loadfull.tk/search/</link>
+    <link>https://kennethliu.tk/search/</link>
     <description>Recent content in Searches on Kenneth Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://loadfull.tk/search/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://kennethliu.tk/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://loadfull.tk/search/placeholder/</link>
+      <link>https://kennethliu.tk/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://loadfull.tk/search/placeholder/</guid>
+      <guid>https://kennethliu.tk/search/placeholder/</guid>
       <description></description>
     </item>
     

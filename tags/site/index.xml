@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Site on Kenneth Blog</title>
-    <link>https://loadfull.tk/tags/site/</link>
+    <link>https://kennethliu.tk/tags/site/</link>
     <description>Recent content in Site on Kenneth Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://loadfull.tk/tags/site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kennethliu.tk/tags/site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>来画饼！</title>
-      <link>https://loadfull.tk/post/2023-05-13-saty/</link>
+      <link>https://kennethliu.tk/post/2023-05-13-saty/</link>
       <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://loadfull.tk/post/2023-05-13-saty/</guid>
+      <guid>https://kennethliu.tk/post/2023-05-13-saty/</guid>
       <description>这应该是我第一篇中文的博客吧， 光全是英文的话没什么意思，偶尔换换语言也挺好的。 这一篇主要是想想这个网站该怎么搞，目前为止应该是有很多功能缺失</description>
     </item>
     
     <item>
       <title>Greetings and...</title>
-      <link>https://loadfull.tk/post/2023-05-10-hi/</link>
+      <link>https://kennethliu.tk/post/2023-05-10-hi/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://loadfull.tk/post/2023-05-10-hi/</guid>
+      <guid>https://kennethliu.tk/post/2023-05-10-hi/</guid>
       <description>Hi everyone, apparently, this is a blog I have created just now. I’ll post something on it. It could be my daily life, something that I was interested in and so on. If you want to ask me why did I bulid this blog. I will tell you that it is my hobby. I’ll try to keep on daily upload, if I didn’t write anything for so long you can just ping me.</description>
     </item>
     
