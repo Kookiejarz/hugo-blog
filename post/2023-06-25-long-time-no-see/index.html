@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Long time no see!" />
+    <meta property="og:title" content="Long time no see!" />
+    <meta property="twitter:title" content="Long time no see!" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Searches | Liu的博客 | Kenneth Blog</title>
+    <title>Long time no see! | Liu的博客 | Kenneth Blog</title>
 
-    <link rel="canonical" href="/search/">
+    <link rel="canonical" href="/post/2023-06-25-long-time-no-see/">
 
     
     
@@ -153,14 +153,42 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Kenneth Blog </h1>
-                    
-		    <span class="subheading">观 世 变 ，展 未 来</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/life" title="Life">
+                            Life
+                        </a>
+                        
+                    </div>
+                    <h1>Long time no see!</h1>
+                    <h2 class="subheading">What have I done those days...</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Kenneth
+                             
+                            on 
+                            Sunday, June 25, 2023
+                            
+                            
+                            
+                         
+                    </span>
+                    ---About<span class="more-meta"> 1 Minute</span>
                 </div>
             </div>
         </div>
@@ -169,241 +197,107 @@
 
 
 
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-        
+
+<article>
+    <div class="container">
+        <div class="row">
+
             
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-<div id="search-searchbar"></div>
- <div class="post-list" id="search-hits">
- </div>
-
-<script>
-const search = instantsearch({
-  appId: 'UNKNSSCZN8',
-  indexName: 'netlify_f6d95925-4e26-4d2b-bfa2-acf828d3c944_main_all',
-  apiKey: '2070931572dc84647c2d716c4a7df59a'
-});
-
-const hitTemplate = function(hit) {
+                
+                <p>Glad to see you again! I know it&rsquo;s such a long time that I haven&rsquo;t posted anything new on my blog, it is all because we are having a exam last week and I have to review everything I learned just to get a good grade on the final score.
+No don&rsquo;t try to ask me I will never tell you my score LOL.
+So apparently the exam is over and we are going to have Summer Holidays! (yeahhhhhh)
+But unfortunately our teacher gave us a lot of homework to do to make sure our brain won&rsquo;t &ldquo;stuck and get old&rdquo;, not happy with that. :(</p>
+<p>But don&rsquo;t worry we can finish about 80% of the homework in about one week by just doing 16 pages of math homework, eight pages of English homework, four pages of Chinese homework and spend about one and a half hour for toefl exam&hellip; You see it&rsquo;s not that difficult to finish nearly all the homework in just one week, STILL OKAY FOR A CHINESE STUDENT ISN&rsquo;T IT?</p>
+<p>All right I have to go to do my homework, goodbye guys see you next time.</p>
 
 
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('MMM D, YYYY');
-  }
-  let url = `${hit.url}#${hit.anchor}`;
-  const title = hit._highlightResult.title.value;
-
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
-
-  let content = "" ; 
-  if (hit._highlightResult.content){
-      content = hit._highlightResult.content.value;
-  }
-  else{
-      content = hit.summary;
-  }
-
-
-  return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
-}
-
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-search.start();
-</script>
-
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-breadcrumbs {
-  color: #424242;
-  display: block;
-}
-.post-breadcrumb {
-  font-size: 18px;
-  color: #424242;
-}
-.post-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-.post-snippet img {
-  display: none;
-}
-</style>
-
-        
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-	
-    <section class="visible-md visible-lg">
-	
-        <div class="short-about">
-            
-            <a href="/about">
-               <img src="/img/profile.png" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>A student who is creative and curious about new things. Not very good in mathematics.</p>
-            
-           
-           <ul class="list-inline">
-               
-               <li>
-                   <a href="mailto:mail@loadfull.tk">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="/img/wechat-qr.jpg">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/Kookiejarz">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-            
-            
-               
-               
-               
-               
+                
+                <span class="post-word-count">--- 190 Words</span>
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2023-05-15-busy-mon/" data-toggle="tooltip" data-placement="top" title="How to use a happy mood to face a brand new week">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
                 </ul>
+                
+                
+
+
+
+
             </div>
-    </section>
-	
-    
-    
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
+
             
             
-               
-                    <a href="/tags/life" title="life">
-                        life
-                    </a>
-               
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
             
-               
-                    <a href="/tags/rewards" title="rewards">
-                        rewards
-                    </a>
-               
+
             
-               
-                    <a href="/tags/site" title="site">
-                        site
-                    </a>
-               
-            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/life" title="life">
+                            life
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/rewards" title="rewards">
+                            rewards
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/site" title="site">
+                            site
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
         </div>
-    </section>
-    
+    </div>
+</article>
 
-    
-    
-    
-</div>
-
-	</div>
-</div>
 
 
 
@@ -462,7 +356,7 @@ search.start();
             
            
                    <li>
-                       <a href='/search/index.xml' rel="alternate" type="application/rss+xml" title="Kenneth Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Kenneth Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
