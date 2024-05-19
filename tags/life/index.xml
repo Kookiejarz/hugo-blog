@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on Kenneth Blog</title>
-    <link>https://kennethliu.tk/tags/life/</link>
+    <link>https://liuu.org/tags/life/</link>
     <description>Recent content in Life on Kenneth Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kennethliu.tk/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuu.org/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recent Updates &#43; sth else</title>
+      <link>https://liuu.org/post/2024-05-15-recent-updates-of-my-site-and-sth-else/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://liuu.org/post/2024-05-15-recent-updates-of-my-site-and-sth-else/</guid>
+      <description>So Kenneth, where did you go these days?&#xA;Well, it’s a loooong story. But I’ll try to tell you in detailed.&#xA;After I posted a post in 23/06/25, I was been surrounded by tones of schoolwork and projects. (You know, that’s how Chinese students’ everyday belike) So this blog was left unfinished and the site owner seemed like dead. (Just Kidding)&#xA;Actually I was preparing for my TOEFL exam during Oct.</description>
+    </item>
     <item>
       <title>Long time no see!</title>
-      <link>https://kennethliu.tk/post/2023-06-25-long-time-no-see/</link>
+      <link>https://liuu.org/post/2023-06-25-long-time-no-see/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/post/2023-06-25-long-time-no-see/</guid>
+      <guid>https://liuu.org/post/2023-06-25-long-time-no-see/</guid>
       <description>Glad to see you again! I know it&amp;rsquo;s such a long time that I haven&amp;rsquo;t posted anything new on my blog, it is all because we are having a exam last week and I have to review everything I learned just to get a good grade on the final score. No don&amp;rsquo;t try to ask me I will never tell you my score LOL. So apparently the exam is over and we are going to have Summer Holidays!</description>
     </item>
-    
     <item>
       <title>How to use a happy mood to face a brand new week</title>
-      <link>https://kennethliu.tk/post/2023-05-15-busy-mon/</link>
+      <link>https://liuu.org/post/2023-05-15-busy-mon/</link>
       <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/post/2023-05-15-busy-mon/</guid>
+      <guid>https://liuu.org/post/2023-05-15-busy-mon/</guid>
       <description>Oh another busy week! Still a looooooooooooooot of things is waiting for me to do, but I&amp;rsquo;m sure I&amp;rsquo;ll deal them. Mass mags are still hard though. Hoping review and some preparation&amp;rsquo;s might let it be more easier. But I also want to share a good news is that I found that Steam in Hong Kong can use WeChat pay direcly, and there&amp;rsquo;s no limit with the variety of the game than Steam in Mainland!</description>
     </item>
-    
     <item>
       <title>Last day of the Week!</title>
-      <link>https://kennethliu.tk/post/2023-05-14-last-day-of-the-week/</link>
+      <link>https://liuu.org/post/2023-05-14-last-day-of-the-week/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/post/2023-05-14-last-day-of-the-week/</guid>
+      <guid>https://liuu.org/post/2023-05-14-last-day-of-the-week/</guid>
       <description>Another boring week, but I finished building my website, that&amp;rsquo;s kinda of success? Well maybe it wasn&amp;rsquo;t that boring because I figured out how to insert an image into a post, maybe I&amp;rsquo;ll try to insert an gif someday in the future. All right seems works now. I&amp;rsquo;m starting to love this hugo blog. But I Stephen don&amp;rsquo;t know how to use algolia search in this website, it won&amp;rsquo;t show</description>
     </item>
-    
     <item>
       <title>Friday! Yeah!</title>
-      <link>https://kennethliu.tk/post/2023-05-12-friday/</link>
+      <link>https://liuu.org/post/2023-05-12-friday/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/post/2023-05-12-friday/</guid>
+      <guid>https://liuu.org/post/2023-05-12-friday/</guid>
       <description>Yooo! It&amp;rsquo;s Friday. The happiest day in the week must be Friday, because you&amp;rsquo;ll have two days for rest and do things whenever you like! :D But I had to take lessons during weekend, not cool, still I can working on with my blog and post some new things up to it. I just misdelated all the files that were used for deploy the blog(That&amp;rsquo;s why i didn&amp;rsquo;t post anything</description>
     </item>
-    
   </channel>
 </rss>

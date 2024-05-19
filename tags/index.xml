@@ -2,37 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kenneth Blog</title>
-    <link>https://kennethliu.tk/tags/</link>
+    <link>https://liuu.org/tags/</link>
     <description>Recent content in Tags on Kenneth Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kennethliu.tk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://liuu.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Life</title>
-      <link>https://kennethliu.tk/tags/life/</link>
-      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/tags/life/</guid>
+      <link>https://liuu.org/tags/life/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://liuu.org/tags/life/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Site</title>
-      <link>https://kennethliu.tk/tags/site/</link>
-      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/tags/site/</guid>
+      <link>https://liuu.org/tags/site/</link>
+      <pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://liuu.org/tags/site/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Rewards</title>
-      <link>https://kennethliu.tk/tags/rewards/</link>
+      <link>https://liuu.org/tags/rewards/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethliu.tk/tags/rewards/</guid>
+      <guid>https://liuu.org/tags/rewards/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
