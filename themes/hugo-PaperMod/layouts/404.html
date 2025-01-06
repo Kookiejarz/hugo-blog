@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        /* Fullscreen 404 styling */
+        .not-found {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements horizontally */
+            justify-content: center; /* Center elements vertically */
+            font-size: 100px;
+            font-weight: 700;
+            color: white;
+            background-image: url('/img/404-bg.jpg'); /* Replace with your image path */
+            background-size: cover; /* Ensure the image fills the entire viewport */
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center; /* Center-align text */
+        }
+
+        .not-found a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Keep text white */
+            transition: color 0.3s ease; /* Add a hover effect */
+        }
+
+        .not-found a:hover {
+            color: rgba(255, 255, 255, 0.8); /* Slightly change color on hover */
+        }
+
+        .not-found .custom-message {
+            font-size: 24px; /* Font size for the message */
+            font-weight: 400; /* Regular font weight for the message */
+            margin-top: 20px; /* Space between "404" and the message */
+            color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+        }
+    </style>
+</head>
+<body>
+    <div class="not-found">
+        <a href="/" title="Go to Homepage">404</a>
+        <p class="custom-message">Uh oh, you shouldn't be here...</p>
+    </div>
+</body>
+</html>

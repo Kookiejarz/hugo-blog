@@ -1,0 +1,9 @@
+<div style="{{ if eq ( .Get "position" ) "center" }}
+    margin: 0 auto; text-align: center; display: block;
+  {{ else }}
+    float: {{ .Get "position" }}; margin-left: 10px;text-align: center;
+  {{ end }}
+  width: {{ .Get "width" }};">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; height: auto;">
+  <span style="display: block;">{{ .Get "caption" }}</span>
+</div>

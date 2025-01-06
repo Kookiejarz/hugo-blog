@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+         
+        .not-found {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            font-size: 100px;
+            font-weight: 700;
+            color: white;
+            background-image: url('/img/404-bg.jpg');  
+            background-size: cover;  
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;  
+        }
+
+        .not-found a {
+            text-decoration: none;  
+            color: white;  
+            transition: color 0.3s ease;  
+        }
+
+        .not-found a:hover {
+            color: rgba(255, 255, 255, 0.8);  
+        }
+
+        .not-found .custom-message {
+            font-size: 24px;  
+            font-weight: 400;  
+            margin-top: 20px;  
+            color: rgba(255, 255, 255, 0.8);  
+        }
+    </style>
+</head>
+<body>
+    <div class="not-found">
+        <a href="/" title="Go to Homepage">404</a>
+        <p class="custom-message">Uh oh, you shouldn't be here...</p>
+    </div>
+</body>
+</html>

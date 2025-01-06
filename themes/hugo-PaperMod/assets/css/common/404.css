@@ -1,0 +1,26 @@
+.not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    font-size: 160px;
+    font-weight: 700;
+    color: white;
+    background-image: url('/img/404-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center; /* Center-aligns text */
+}
+
+.not-found .custom-message {
+    font-size: 24px; /* Smaller font size for the message */
+    font-weight: 400; /* Regular font weight for the message */
+    margin-top: 20px; /* Space between "404" and the message */
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for contrast */
+}
