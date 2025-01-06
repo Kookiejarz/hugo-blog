@@ -1,0 +1,78 @@
+baseURL: "https://liuu.org/"
+languageCode: "en-us"
+title: "Liu's Blog"
+theme: "hugo-PaperMod"
+pagerSize: 5
+
+params:
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShareButtons: ["instagram", "x"]
+
+  ShowCodeCopyButtons: true
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  comments: true
+
+  disableScrollToTop: false
+
+  cover:
+    linkFullImages: true
+
+  homeInfoParams:
+    Title: "观 世 变 ，展 未 来"
+    Content: "📚Time to fly💻. - - -> Dream High"
+
+  socialIcons:
+    - name: "instagram"
+      url: "https://www.instagram.com/kennethhhliu"
+    - name: "github"
+      url: "https://github.com/Kookiejarz"
+    - name: "x"
+      url: "https://x.com/LiuKenneth3"
+    - name: "email"
+      url: "mailto:kenneth@cookiejar.eu.org"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "/favicons/favicon.ico"
+    favicon16x16: "/favicons/favicon-16x16.png"
+    favicon32x32: "/favicons/favicon-32x32.png"
+    apple_touch_icon: "/favicons/apple-touch-icon.png"
+    safari_pinned_tab: "/favicons/favicon-16x16.png"
+
+
+services:
+  disqus:
+    shortname: kennethliuu
+
+menu:
+  main:
+    - name: "About Me"
+      url: "about"
+      weight: 7
+    - name: "Archive"
+      url: "archives"
+      weight: 8
+    - name: "Search"
+      url: "search/"
+      weight: 9
+    - name: "Tags"
+      url: "tags/"
+      weight: 10
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
