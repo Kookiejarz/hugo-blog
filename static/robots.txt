@@ -1,0 +1,15 @@
+# robots.txt for Blog
+
+# Allow all search engines to index the site
+User-agent: *
+Disallow: /drafts/       # Disallow access to drafts or unpublished content
+Disallow: /private/      # Disallow access to private content
+
+# Disallow crawling of search results pages
+Disallow: /search/
+
+# Allow all public content
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://liuu.org/sitemap.xml

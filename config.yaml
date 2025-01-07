@@ -7,7 +7,6 @@ pagerSize: 5
 enableRobotsTXT: true
 
 params:
-  env: production 
   defaultTheme: auto
   ShowShareButtons: false
   ShareButtons: ["instagram", "x"]
