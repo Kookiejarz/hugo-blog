@@ -20,10 +20,22 @@
     {{- end }}
 </header>
 
-<div id="searchbox">
-    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
-        aria-label="search" type="search" autocomplete="off" maxlength="64">
-    <ul id="searchResults" aria-label="search results"></ul>
+<div id="searchbox" class="search-container">
+    <div class="search-wrapper">
+        <input 
+            id="searchInput" 
+            autofocus 
+            placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
+            aria-label="search" 
+            type="search" 
+            autocomplete="on" 
+            maxlength="64"
+            aria-expanded="false">
+        <div class="search-loading" aria-hidden="true">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <ul id="searchResults" aria-label="search results" class="search-results"></ul>
 </div>
 
 {{- end }}{{/* end main */}}

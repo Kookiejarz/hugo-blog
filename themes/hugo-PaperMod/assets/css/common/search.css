@@ -12,22 +12,25 @@
 }
 
 #searchResults li {
+    transition: all 0.3s ease-in-out;
     list-style: none;
     border-radius: var(--radius);
     padding: 10px;
     margin: 10px 0;
     position: relative;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #searchResults {
     margin: 10px 0;
     width: 100%;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 #searchResults li:active {
-    transition: transform 0.1s;
-    transform: scale(0.98);
+    animation: clickBounce 0.3s ease-out;
+    background-color: var(--tertiary);
 }
 
 #searchResults a {
@@ -42,4 +45,80 @@
 #searchResults .focus {
     transform: scale(0.98);
     border: 2px solid var(--tertiary);
+    transition: transform 0.2s ease, border 0.2s ease;
+}
+
+/* Hover effect */
+#searchResults li:hover {
+    transform: translateX(8px);
+    background-color: var(--entry);
+}
+
+/* Ensure smooth animation chain */
+#searchResults li:active:hover {
+    transform: translateX(8px) scale(0.95);
+}
+
+/* Fade-in animation for search results */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Search container animations */
+.search-container {
+    transition: all 0.3s ease;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loader {
+    border: 2px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.8s linear infinite;
+    display: none;
+}
+
+.search-loading[aria-hidden="false"] .loader {
+    display: inline-block;
+}
+
+/* Enhanced search results animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes clickBounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

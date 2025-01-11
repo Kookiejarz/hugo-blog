@@ -30,15 +30,54 @@
     position: relative;
     padding: 5px;
     margin: 10px 0;
+    transition: all 0.3s ease;
+    animation: archiveFadeIn 0.5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.archive-entry:hover {
+    transform: translateX(10px);
+    background-color: var(--entry);
+    border-radius: var(--radius);
+}
+
+.archive-entry:active {
+    transform: scale(0.98);
 }
 
 .archive-entry-title {
     margin: 5px 0;
     font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.archive-entry:hover .archive-entry-title {
+    color: var(--primary);
 }
 
 .archive-count,
 .archive-meta {
     color: var(--secondary);
     font-size: 14px;
+    transition: opacity 0.2s ease;
+}
+
+.archive-entry:hover .archive-meta {
+    opacity: 0.8;
+}
+
+/* Stagger animation for multiple entries */
+.archive-entry:nth-child(n) {
+    animation-delay: calc(n * 0.1s);
+}
+
+@keyframes archiveFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
